@@ -61,7 +61,7 @@ function getFactAjaxNumbers(){
 
 function getFactAjaxYears(){
     let number = numberInput.value;
-    if(number){
+    if(number&&number>0){
     let xhr = new XMLHttpRequest();
     xhr.open('GET','http://numbersapi.com/' + number +'/year' );
     xhr.onload = function(){
